@@ -1,0 +1,125 @@
+:root {
+  color-scheme: dark;
+  --page: #0a0a0a;
+  --ink: #f4f4f5;
+  --copy: #b7bbc2;
+  --mute: #90949b;
+  --line: #252627;
+  --panel: #1b1c1d;
+  --inner: #18191a;
+  --field: #222325;
+  --edge: #37383a;
+  --green: #79bd92;
+  --amber: #d7b36c;
+  --violet: #a89fdb;
+  --chart: #2a9ca6;
+  --floor: #73767a;
+  --shade: #0009;
+  font:
+    16px/1.5 Inter,
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+  color: var(--ink);
+  background: var(--page);
+  -webkit-font-smoothing: antialiased;
+  font-variant-numeric: tabular-nums;
+}
+* {
+  box-sizing: border-box;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+html {
+  scroll-padding-top: 96px;
+  scroll-behavior: smooth;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button,
+input {
+  font: inherit;
+  color: inherit;
+}
+a,
+button {
+  touch-action: manipulation;
+}
+button {
+  cursor: pointer;
+}
+button:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 3px;
+}
+a,
+button {
+  transition:
+    background 0.17s,
+    color 0.17s,
+    scale 0.17s;
+}
+button:active,
+.pill:active {
+  scale: 0.96;
+}
+h1,
+h2,
+h3 {
+  font-weight: 550;
+  letter-spacing: -0.052em;
+  line-height: 1.04;
+}
+p {
+  text-wrap: pretty;
+}
+.icon {
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex: none;
+}
+small {
+  color: var(--mute);
+  font-size: 12px;
+}
+button,
+.pill {
+  border: 1px solid var(--edge);
+  background: var(--field);
+  border-radius: 6px;
+  padding: 7px 12px;
+}
+button:hover,
+.pill:hover {
+  background: var(--edge);
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
