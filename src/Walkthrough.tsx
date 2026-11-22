@@ -1,3 +1,5 @@
+import { Brand } from "./Brand";
+export { Brand } from "./Brand";
 import { useEffect, useRef, useState } from "react";
 import { motion, useReducedMotion } from "framer-motion";
 import { Icon } from "./Icon";
@@ -41,18 +43,6 @@ export function Badge({
     <span className={"badge " + tone}>
       <i />
       {children}
-    </span>
-  );
-}
-export function Brand() {
-  return (
-    <span className="brand">
-      <i className="brandmark" aria-hidden="true">
-        <b />
-        <b />
-        <b />
-      </i>
-      Trial
     </span>
   );
 }

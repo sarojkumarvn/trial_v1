@@ -1,0 +1,32 @@
+.signup-page { align-content: start; }
+.signup-page .login-panel { height: 605px; }
+.signup-step { animation: signup-enter 160ms ease-out; overflow-wrap: anywhere; }
+@keyframes signup-enter { from { opacity: .6; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+.signup-step h1 { margin-top: 8px; text-wrap: balance; }
+.signup-step h1:focus { outline: 0; }
+.signup-indicator { margin-top: 25px; color: #bcbac1; font-size: 13px; }
+.signup-indicator span { margin-left: 10px; padding-left: 10px; border-left: 1px solid #505050; }
+.signup-fields, .signup-choices { margin: 0; padding: 0; border: 0; min-width: 0; }
+.signup-choices { display: grid; gap: 8px; margin-bottom: 24px; }
+.signup-choices label { display: flex; gap: 10px; align-items: center; background: #202020; padding: 11px 14px; border: 1px solid transparent; border-radius: 8px; cursor: pointer; font-size: 14px; }
+.signup-choices label:has(:checked) { border-color: #858d7e; background: #292d28; }
+.signup-choices input { accent-color: #bbc6ae; margin: 0; }
+.signup-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+.signup-actions, .signup-links { display: flex; gap: 14px; align-items: center; }
+.signup-actions { margin-top: 32px; }
+.signup-actions .login-primary { margin: 0; }
+.signup-back { border-radius: 11px; height: 40px; padding-inline: 22px; }
+.signup-note, .signup-summary { color: #bebfc3; font-size: 14px; margin: 12px 0 0; }
+.signup-summary { display: grid; grid-template-columns: auto 1fr; gap: 4px 16px; }
+.signup-summary dd { margin: 0; color: #f4f4f5; }
+.signup-fields > .login-intro { margin-bottom: 22px; }
+.signup-fields strong { font-weight: 500; }
+.signup-links { justify-content: space-between; margin-top: 16px; color: #c8c9cc; font-size: 14px; }
+.login-password .signup-show { width: 48px; font-size: 12px; }
+.signup-fields input[type=password], .signup-fields #new-password { padding-right: 54px; }
+@media (max-width: 700px) {
+  .signup-column { min-height: 575px; }
+  .signup-page .login-panel { height: 355px; }
+  .signup-actions { margin-top: 24px; }
+  .signup-back { height: 44px; }
+}

@@ -17,32 +17,6 @@ nav {
   height: 75px;
   font-size: 13px;
 }
-.brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 22px;
-  font-weight: 650;
-  letter-spacing: -1.1px;
-}
-.brandmark {
-  display: flex;
-  gap: 2px;
-  align-items: end;
-  transform: skew(-18deg);
-  height: 18px;
-}
-.brandmark b {
-  background: currentColor;
-  width: 4px;
-  height: 50%;
-}
-.brandmark b:nth-child(2) {
-  height: 75%;
-}
-.brandmark b:last-child {
-  height: 100%;
-}
 .navlinks {
   margin-left: auto;
   display: flex;
